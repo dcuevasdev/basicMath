@@ -16,6 +16,17 @@ function areaTriangulo(base, altura) {
   return (base * altura) / 2;
 }
 
+//Altura triangulo isoceles
+function alturaTriangulo(lado1, lado2, base) {
+  if (lado1 === lado2) {
+    const subBase = base / 2;
+    const altura = Math.sqrt(lado1 ** 2 - subBase ** 2);
+    return altura;
+  } else {
+    return "No es un triángulo isóceles";
+  }
+}
+
 // Código del Cìrculo
 function diametroCirculo(radio) {
   return radio * 2;
